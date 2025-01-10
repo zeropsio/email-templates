@@ -37,48 +37,28 @@ Included S3 bucket is **{{ .services.storage.env.bucketName }}** with capacity {
 
 ## Base Variables
 
-| Variable        | Description                             | Example                  |
-|-----------------|-----------------------------------------|--------------------------|
-| `.zeropsAppUrl` | Base URL of the Zerops application      | `https://app.zerops.io`  |
-| `.projectId`    | Project UUID (useful for building URLs) | `nLDPSPipR42pJVkL3K2a9g` |
-
-## Account Information
-
-| Variable        | Description                                    | Example                  |
-|-----------------|------------------------------------------------|--------------------------|
-| `.account.id`   | Organization's UUID (useful for building URLs) | `nLDPSPipR42pJVkL3K2a9g` |
-| `.account.name` | Organization's display name                    | `Acme Corp`              |
-
-## User Information
-
-| Variable          | Description                                    | Example                  |
-|-------------------|------------------------------------------------|--------------------------|
-| `.user.id`        | Emailed user's UUID (useful for building URLs) | `nLDPSPipR42pJVkL3K2a9g` |
-| `.user.firstName` | Emailed user's first name                      | `Bob`                    |
-| `.user.email`     | Emailed user's email address                   | `bob@example.com`        |
-
-## Recipe Information
-
-| Variable         | Description                              | Example                               |
-|------------------|------------------------------------------|---------------------------------------|
-| `.recipe.source` | Source location of the recipe            | `github/zerops-templates/nodejs`      |
-| `.recipe.name`   | Name of the recipe being used            | `Node.js Basic Setup`                 |
-| `.recipe.tags`   | Array of tags associated with the recipe | `["nodejs", "express", "production"]` |
-
-## Service Information
-
-| Variable                        | Description                                                                                 | Example                                             |
-|---------------------------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| `.services.{name}.id`           | Service UUID (useful for building URLs)                                                     | `nLDPSPipR42pJVkL3K2a9g`                            |
-| `.services.{name}.pipelineId`   | Optional pipeline (appVersion) UUID (useful for building URLs)                              | `nLDPSPipR42pJVkL3K2a9g`                            |
-| `.services.{name}.hostname`     | Hostname of the service                                                                     | `app`                                               |
-| `.services.{name}.type`         | Service type                                                                                | `nodejs@18`                                         |
-| `.services.{name}.env.{key}`    | Service's environment variable value, secret and internal environment variables are omitted | For `.services.app.env.bucketName`: `4g5it-storage` |
-| `.services.{name}.gitSource`    | Optional git repository build source URL                                                    | `https://github.com/org/repo`                       |
-| `.services.{name}.subdomainUrl` | Optional public subdomain URL                                                               | `https://myapp.zerops.io`                           |
+| Variable                        | Description                                                                                                                                     | Example                               |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
+| `.ZeropsAppUrl`                 | Base URL of the Zerops application                                                                                                              | `https://app.zerops.io`               |
+| `.ProjectId`                    | Project UUID (useful for building URLs)                                                                                                         | `nLDPSPipR42pJVkL3K2a9g`              |
+| `.Account.Id`                   | Organization's UUID (useful for building URLs)                                                                                                  | `nLDPSPipR42pJVkL3K2a9g`              |
+| `.Account.Name`                 | Organization's display name                                                                                                                     | `Acme Corp`                           |
+| `.User.Id`                      | Emailed user's UUID (useful for building URLs)                                                                                                  | `nLDPSPipR42pJVkL3K2a9g`              |
+| `.User.FirstName`               | Emailed user's first name                                                                                                                       | `Bob`                                 |
+| `.User.Email`                   | Emailed user's email address                                                                                                                    | `bob@example.com`                     |
+| `.Recipe.Source`                | Source location of the recipe                                                                                                                   | `github/zerops-templates/nodejs`      |
+| `.Recipe.Name`                  | Name of the recipe being used                                                                                                                   | `nodejs-devel`                        |
+| `.Recipe.Tags`                  | Array of tags associated with the recipe                                                                                                        | `["nodejs", "express", "production"]` |
+| `.Services.<name>.Id`           | Service UUID (useful for building URLs)                                                                                                         | `nLDPSPipR42pJVkL3K2a9g`              |
+| `.Services.<name>.Hostname`     | Hostname of the service                                                                                                                         | `app`                                 |
+| `.Services.<name>.Type`         | Service type                                                                                                                                    | `nodejs@18`                           |
+| `.Services.<name>.Env.<key>`    | Service's environment variable value, secret and internal environment variables are omitted, access as following `.Services.app.Env.bucketName` | `4g5it-storage`                       |
+| `.Services.<name>.PipelineId`   | Optional pipeline (appVersion) UUID (useful for building URLs)                                                                                  | `nLDPSPipR42pJVkL3K2a9g`              |
+| `.Services.<name>.GitSource`    | Optional git repository build source URL                                                                                                        | `https://github.com/org/repo`         |
+| `.Services.<name>.SubdomainUrl` | Optional public subdomain URL                                                                                                                   | `https://myapp.zerops.io`             |
 
 ## Go template 101
 
-- `{{ if .services.app.gitSource }}Has git source!{{ else }}No git source :/{{ end }}` -> if, else
-- `{{ range .services }}{{ .subdomainUrl }}{{ end }}` -> loop over all services, access via `.{serviceField}`
-- `{{ index .recipe.tags 2 }}` -> prints second tag, if available, otherwise fails
+- `{{ if .Services.app.GitSource }}Has git source -> {{ .Services.app.GitSource }}!{{ else }}No git source :/{{ end }}` -> if/else, check for optional values
+- `{{ range .Services }}{{ .SubdomainUrl }}{{ end }}` -> loop over all services, access via `.{serviceField}`
+- `{{ index .Recipe.Tags 2 }}` -> prints second tag, if available, otherwise fails
