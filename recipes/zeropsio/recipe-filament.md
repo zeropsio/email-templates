@@ -1,3 +1,5 @@
+[//]: # (Your Zerops Recipe '{{ .Recipe.Name }}' is live! 🚀)
+
 # Hello {{ .User.FirstName }},
 
 recipe **{{ .Recipe.Name }}** is live!
