@@ -1,4 +1,4 @@
-[//]: # (Welcome to Zerops)
+[//]: # (Welcome to Zerops maaan!)
 
 Thank you for signing up to Zerops, {{ .FirstName }}!
 
