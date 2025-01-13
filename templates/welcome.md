@@ -14,7 +14,7 @@ The fastest way to dive into Zerops is through our [one-click recipes](https://a
 - **Granular Control & Fully automatic scaling** - Scale from 0.25GB RAM and single CPU cores, pay by the minute, with resource steps that match your actual needs
 - **Full System Access** - Built on Incus (LXC) containers with SSH access and complete Linux OS environments, giving you transparency without complexity
 
-## Key Technical Details You'll Want to Know
+## Technical Details You'll Want to Know
 - **[VPN Access](https://docs.zerops.io/references/vpn)** - Each project gets its own VPN for secure local development against remote services
 - **[Build Pipeline](https://docs.zerops.io/features/pipeline)** - Flexible build configurations through `zerops.yml` with build caching and artifact management
 - **[Resource Steps](https://docs.zerops.io/features/scaling-ha)** - Scale in increments as small as 1 CPU core and 250MB RAM
