@@ -1,1 +1,1 @@
-
+# recipe laravel jetstream devel
