@@ -5,7 +5,7 @@ Thank you for signing up to Zerops, {{ .FirstName }}!
 Our entire dev team hangs out on [Zerops Discord server](https://discord.gg/zeropsio) - join for real-time help, technical discussions, or just to chat about infrastructure and programming in general. We're building Zerops to be the platform we always wanted to use, bringing together the ideal mix of **developer experience**, **flexibility**, and **scalability** with a sensible **pricing model that doesn't get in the way of good development practices**, and we'd love your input.
 
 ## Explore Zerops Through Our Recipes 🚀
-The fastest way to dive into Zerops is through our [one-click recipes](https://app.zerops.io/dashboard/recipes). We have basic example for most popular runtime technology, as well as more complex examples for the most popular frameworks. Each recipe deploys in minutes and gives you a fully configured environment to explore. Choose one that matches your tech stack, click deploy, and watch how Zerops builds and runs your infrastructure.
+The fastest way to dive into Zerops is through our [one-click recipes](https://app.zerops.io/dashboard/recipes). We have basic examples for most popular runtime technologies, as well as more complex examples for popular frameworks. Each recipe deploys in minutes and gives you a fully configured environment to explore. Choose one that matches your tech stack, click deploy, and watch how Zerops builds and runs your infrastructure.
 
 ## What Makes Zerops Different
 - **Sophisticated Network Architecture** - Each project runs in its own isolated VXLAN network with dedicated L3/L7 balancers, making services feel like they're running right next to each other while maintaining strict isolation underneath
