@@ -4,7 +4,7 @@
 
 Thank you for signing up to Zerops, {{ .FirstName }}!
 
-You'll find our dev team on [Zerops Discord server](https://discord.gg/zeropsio) - join us for real-time help, technical discussions, or just to chat about infrastructure, cloud and programming. We're building Zerops to be the platform we always wanted to use, bringing together the ideal mix of **developer experience**, **flexibility**, and **scalability** with a sensible **pricing model that doesn't get in the way of good development practices**, and **we'd love your input**.
+You'll find our entire dev team on [Zerops Discord server](https://discord.gg/zeropsio) - join us for real-time help, technical discussions, or just to chat about infrastructure, cloud and programming. We're building Zerops to be the platform we always wanted to use, bringing together the ideal mix of **developer experience**, **flexibility**, and **scalability** with a sensible **pricing model that doesn't get in the way of good development practices**, and **we'd love your input**.
 
 <br/>
 
