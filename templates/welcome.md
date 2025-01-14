@@ -1,8 +1,12 @@
 [//]: # (Welcome to Zerops)
 
+<div style="max-width: 600px;">
+
 Thank you for signing up to Zerops, {{ .FirstName }}!
 
 You'll find our dev team on [Zerops Discord server](https://discord.gg/zeropsio) - join us for real-time help, technical discussions, or just to chat about infrastructure, cloud and programming. We're building Zerops to be the platform we always wanted to use, bringing together the ideal mix of **developer experience**, **flexibility**, and **scalability** with a sensible **pricing model that doesn't get in the way of good development practices**, and **we'd love your input**.
+
+<br/>
 
 ### Explore Zerops through recipes (quickrun)
 The fastest way to dive into Zerops is through our [one-click recipes](https://app.zerops.io/dashboard/recipes). Choose one similar to your tech stack, click deploy and within minutes you have a fully configured environment to explore.
@@ -37,3 +41,5 @@ The fastest way to dive into Zerops is through our [one-click recipes](https://a
 
 ### Get $50 more free credits
 Once you've explored Zerops with your initial $15 credits and like what you see, make your first $10 payment and we'll add another $50 in credits as a thanks for your trust in Zerops.
+
+</div>
