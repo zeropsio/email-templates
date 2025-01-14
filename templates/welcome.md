@@ -1,6 +1,6 @@
 [//]: # (Welcome to Zerops)
 
-<div style="max-width: 600px;">
+<div style="max-width: 1000px;">
 
 Thank you for signing up to Zerops, {{ .FirstName }}!
 
