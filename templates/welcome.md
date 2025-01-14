@@ -19,7 +19,7 @@ The fastest way to dive into Zerops is through our [one-click recipes](https://a
 - **[Build & deploy pipeline](https://docs.zerops.io/features/pipeline)** - Flexible build & deploy pipeline running on separate build containers, configured through `zerops.yml` with build caching, env management and ability to easily modify dependencies and configure both build and runtime images
 - **[SSH Access](https://docs.zerops.io/references/ssh)** - After connecting with VPN, direct root `ssh` access into any container for debugging or development available (with web terminal alternative built into GUI)
 
-### Resources Worth Bookmarking
+### Resources worth bookmarking
 - **[Zerops dashboard](https://app.zerops.io/)**
 - **[Documentation](https://docs.zerops.io/)**
 - **[CLI Reference](https://docs.zerops.io/references/cli)**
