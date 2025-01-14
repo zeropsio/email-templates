@@ -26,3 +26,6 @@ The fastest way to dive into Zerops is through our [one-click recipes](https://a
 - **[Recipes](https://app.zerops.io/dashboard/recipes)**
 - **Support email** — support@zerops.io
 - **CEO email** - ales@zerops.io
+
+### Get $50 more free credits
+Once you've explored Zerops with your initial $15 credits and like what you see, make your first $10 payment and we'll add another $50 in credits as a thanks for your trust in Zerops.
