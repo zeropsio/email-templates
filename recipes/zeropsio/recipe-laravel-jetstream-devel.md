@@ -1,6 +1,6 @@
 [//]: # (Your Zerops recipe {{ .Recipe.Name }} is live! What next?)
 
-Example of Laravel Jetstream development environment was successfully deployed to Zerops. You can check the (live application here)[{{ .Services.app.SubdomainUrl }}] and see the project detail in (Zerops dashboard here)[https://app.zerops.io/project/{{ .ProjectId }}].
+Your **Laravel Jetstream development environment** was successfully deployed to Zerops. You can check the (live application here)[{{ .Services.app.SubdomainUrl }}] and see the project detail in (Zerops dashboard here)[https://app.zerops.io/project/{{ .ProjectId }}].
 
 ## What next?
 - explore the YAML structure this project was imported from to see how easy it is to setup templates
