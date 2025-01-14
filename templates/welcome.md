@@ -12,7 +12,7 @@ The fastest way to dive into Zerops is through our [one-click recipes](https://a
 - **True Environment Parity** - All environments, whether it's local, dev, stage or production use the same architecture, with different resource allocation being the only difference. Create copies of production envs for your team members to utilize locally, eliminate "but it works on my machine".
 - **Managed Stateful Services** - Stateful services like databases, searches, storages and queues are available in high availability, with automatic failover, backups, and optimized scaling 
 - **Granular Control & Fully automatic scaling** - Scale from 0.25GB RAM and single CPU cores, pay by the minute, with resource steps that match your actual needs
-- **Full System Access** - Containers built on Incus (LXD) containers with SSH access and complete Linux OS environments, giving you maximal flexibility and system debug tooling
+- **Full System Access** - Containers built on top of [Incus](https://linuxcontainers.org/incus/) (LXD) containers with SSH access and complete Linux OS environments, giving you maximal flexibility and system debug tooling
 
 ### Technical details you'll find handy
 - **[VPN Access](https://docs.zerops.io/references/vpn)** - Each project gets its own VPN for secure local development against remote services and utilization or management of stateful services
