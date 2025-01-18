@@ -19,5 +19,9 @@ While Zerops supports various CI/CD workflows, let's start with the simplest pat
 
 <br/>
 
+## Want to integrate Zerops with your existing Jetstream app?
+See the list of [changes made over the default installation](https://github.com/zeropsio/recipe-laravel-jetstream/blob/main/README.md#changes-made-over-the-default-installation) to replicate the steps and copy the configs to your own application.
+<br/><br/>
+
 ## Need Help?
 You'll find our entire dev team on [Zerops Discord server](https://discord.gg/zeropsio), join for help from both us and the community. Alternativelly email us at support@zerops.io. See **[Zerops Laravel documentation](https://docs.zerops.io/frameworks/laravel)** for general tips about running Laravel apps on Zerops.
