@@ -39,4 +39,4 @@ For a complete step-by-step guide demonstrating how to use Zerops effectively wi
 Visit [laravel.zerops.io](https://laravel.zerops.io) to explore and instantly deploy other pre-configured Laravel environments - from Local to Development and Large-scale Production setups.
 
 ### Need Help?
-You'll find our entire dev team on [Zerops Discord server](https://discord.gg/zeropsio), join for help from both us and the community. Alternatively email us at support@zerops.io. See **[Zerops Laravel documentation](https://docs.zerops.io/frameworks/laravel)** for general tips about running Laravel apps on Zerops.
+You'll find our entire dev team on [Zerops Discord server](https://discord.gg/zeropsio), join for help from both us and the community. Alternatively email us at support@zerops.io.
