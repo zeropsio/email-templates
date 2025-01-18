@@ -7,7 +7,7 @@ The app has been set up to utilize Valkey (Redis-compatible KV store) to handle 
 This recipe showcases a production-ready integration of Jetstream apps to Zerops, and only the amount of allocated resources (set to minimum) make this environemnt "development".
 <br/><br/>
 
-## Try the build & deploy pipeline with two quick steps
+### Try the build & deploy pipeline with two quick steps
 While Zerops supports various CI/CD workflows, let's start with the simplest path to get you familiar with the core concepts:
 
 1. Create your own repository from our (GitHub template)[https://github.com/zeropsio/recipe-laravel-jetstream]
@@ -19,9 +19,9 @@ While Zerops supports various CI/CD workflows, let's start with the simplest pat
 
 <br/>
 
-## Want to integrate Zerops with your existing Jetstream app?
+### Want to integrate Zerops with your existing Jetstream app?
 See the list of [changes made over the default installation](https://github.com/zeropsio/recipe-laravel-jetstream/blob/main/README.md#changes-made-over-the-default-installation) to replicate the steps and copy the configs to your own application.
 <br/><br/>
 
-## Need Help?
+### Need Help?
 You'll find our entire dev team on [Zerops Discord server](https://discord.gg/zeropsio), join for help from both us and the community. Alternativelly email us at support@zerops.io. See **[Zerops Laravel documentation](https://docs.zerops.io/frameworks/laravel)** for general tips about running Laravel apps on Zerops.
