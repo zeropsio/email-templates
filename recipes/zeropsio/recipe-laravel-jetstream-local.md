@@ -15,7 +15,7 @@ You would use the same setup for development environment or a small production e
 3. test the connection is working by visiting [http://app.zerops:80](http://app.zerops:80), after confirming you can e.g. connect to database and cache using their Zerops hostname (`db.zerops`, `cache.zerops`) from your locally running application, or manage the database securely from your locally installed tools, you can go even further and use vscode remote / JetBrains Remote Development and develop on Zerops containers
 <br/><br/>
 
-### Try the build & deploy pipeline with one (or two) quick steps
+### Try the build & deploy pipeline
 Since you are already logged into zcli, all you need is to create your own repository from our [GitHub template](https://github.com/zeropsio/recipe-laravel-jetstream), clone it locally you can simply enter `zcli push` to your terminal in the root of the freshly cloned project.
 
 To setup automatic CI/CD, navigate to [Pipelines & CI/CD settings](https://app.zerops.io/service-stack/{{ .Services.app.id }}/deploy) and connect the service with your new GitHub repository, setting the trigger to **Push to Branch**
