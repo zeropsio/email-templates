@@ -32,8 +32,8 @@ To setup automatic CI/CD, navigate to [Pipelines & CI/CD settings](https://app.z
 See the list of [changes made over the default installation](https://github.com/zeropsio/recipe-laravel-jetstream/blob/main/README.md#changes-made-over-the-default-installation) to replicate the steps and copy the configs to your own application.
 <br/><br/>
 
-### Want to Dive Deeper?
-For a complete step-by-step guide starting from a fresh Laravel installation to production deployment, check out our [detailed Laravel tutorial](https://docs.zerops.io/frameworks/laravel/introduction).
+### Understanding Zerops Core Concepts
+For a complete step-by-step guide demonstrating how to use Zerops effectively with Laravel, check out our [detailed Laravel tutorial](https://docs.zerops.io/frameworks/laravel/introduction).
 
 ### Explore More Setups
 Visit [laravel.zerops.io](https://laravel.zerops.io) to explore and instantly deploy other pre-configured Laravel environments - from Local to Development and Large-scale Production setups.
