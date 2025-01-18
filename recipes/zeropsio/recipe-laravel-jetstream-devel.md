@@ -4,7 +4,7 @@
 
 The app has been set up to utilize Valkey (Redis-compatible KV store) to handle sessions and cache, with the filesystem of both Laravel and Jetstream-specific parts configured to utilize Zerops' built-in object storage. For the development environment specifically, the setup includes Mailpit, which is a "fake SMTP" server for dev purposes. The build and deploy process ([zerops.yml](https://github.com/zeropsio/recipe-laravel-jetstream/blob/main/zerops.yml)) has been set up to properly migrate the database on each deploy, cleanup/cache files, and implement health and readiness checks.
 
-This recipe showcases a production-ready integration of Jetstream apps to Zerops. The development environment designation comes solely from its minimal resource allocation and [Lightweight](https://docs.zerops.io/features/pricing#understanding-projects) project core configuration.
+This recipe showcases a production-ready integration of Jetstream apps to Zerops. The fact this environment is "development" comes just from its minimal, cost-efficient resource allocation and [Lightweight](https://docs.zerops.io/features/pricing#understanding-projects) project core package used.
 <br/><br/>
 
 ### Try the build & deploy pipeline with two quick steps
