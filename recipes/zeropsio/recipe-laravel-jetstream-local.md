@@ -14,7 +14,7 @@ You would use the same setup for development environment or a small production e
 2. Install [zcli](https://docs.zerops.io/references/cli#get-started), create a new [personal access token](https://app.zerops.io/settings/token-management)
 3. Enter `zcli vpn up {{ .ProjectId }}` to your terminal (this will require [Wireguard installed](https://docs.zerops.io/references/vpn) on your machine)
 4. Create `.env` from `.env.example` and fill in database access details from [`db` service detail](https://app.zerops.io/service-stack/{{ .Services.db.id }}/access-details)
-5. Start the development server, which is now utilizing database, redis and storage from Zerops
+5. Start the development server with `php artisan serve`, or use your preferred setup (Valet, Herd, Sail) - your application will utilize database, redis and storage from Zerops
 <br/><br/>
 
 ### Try the build & deploy pipeline
@@ -31,6 +31,12 @@ To setup automatic CI/CD, navigate to [Pipelines & CI/CD settings](https://app.z
 ### Want to integrate Zerops with your existing Jetstream app?
 See the list of [changes made over the default installation](https://github.com/zeropsio/recipe-laravel-jetstream/blob/main/README.md#changes-made-over-the-default-installation) to replicate the steps and copy the configs to your own application.
 <br/><br/>
+
+### Want to Dive Deeper?
+For a complete step-by-step guide starting from a fresh Laravel installation to production deployment, check out our [detailed Laravel tutorial](https://docs.zerops.io/frameworks/laravel/introduction).
+
+### Explore More Setups
+Visit [laravel.zerops.io](https://laravel.zerops.io) to explore and instantly deploy other pre-configured Laravel environments - from Local to Development and Large-scale Production setups.
 
 ### Need Help?
 You'll find our entire dev team on [Zerops Discord server](https://discord.gg/zeropsio), join for help from both us and the community. Alternatively email us at support@zerops.io. See **[Zerops Laravel documentation](https://docs.zerops.io/frameworks/laravel)** for general tips about running Laravel apps on Zerops.
