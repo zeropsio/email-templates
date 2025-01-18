@@ -9,7 +9,7 @@ This recipe showcases a production-ready integration of Jetstream apps to Zerops
 You would use the same setup for development environment or a small production environment, what makes this environment "local" is the fact that you'd only turn on the services that you'd utilize for your local development and have them running only when you are actively working. 
 <br/><br/>
 
-### Test how to utilize zcli with built-in VPN for local development
+### Test how VPN built into Zerops CLI can help you with local development
 1. Create your own repository from our [GitHub template](https://github.com/zeropsio/recipe-laravel-jetstream) and clone it locally
 2. Install [zcli](https://docs.zerops.io/references/cli#get-started), create a new [personal access token](https://app.zerops.io/settings/token-management)
 3. Enter `zcli vpn up {{ .ProjectId }}` to your terminal (this will require [Wireguard installed](https://docs.zerops.io/references/vpn) on your machine)
