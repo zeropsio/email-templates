@@ -14,7 +14,7 @@ While Zerops supports various CI/CD workflows, let's start with the simplest pat
 2. Navigate to (Pipelines & CI/CD settings)[https://app.zerops.io/service-stack/{{ .Services.app.id }}/deploy] and connect the service with your new GitHub repository, setting the trigger to **Push to Branch**
 
 **Now test the deployment pipeline:**
-- Make a small change directly in the GitHub/GitLab UI
+- Make a small change directly in the GitHub UI
 - Commit the change and watch the magic happen in (project detail)[https://app.zerops.io/project/{{ .ProjectId }}] 
 
 <br/>
