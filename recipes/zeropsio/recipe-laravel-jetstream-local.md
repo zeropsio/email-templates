@@ -10,13 +10,15 @@ You would use the same setup for development environment or a small production e
 <br/><br/>
 
 ### Test how to utilize zcli with built-in VPN for local development
-1. install [zcli](https://docs.zerops.io/references/cli#get-started), create a new [personal access token](https://app.zerops.io/settings/token-management)
-2. enter `zcli vpn up {{ .ProjectId }}` to your terminal (this will require [Wireguard installed](https://docs.zerops.io/references/vpn) on your machine)
-3. test the connection is working by visiting [http://app.zerops:80](http://app.zerops:80), after confirming you can e.g. connect to database and cache using their Zerops hostname (`db.zerops`, `cache.zerops`) from your locally running application, or manage the database securely from your locally installed tools, you can go even further and use vscode remote / JetBrains Remote Development and develop on Zerops containers
+1. Create your own repository from our [GitHub template](https://github.com/zeropsio/recipe-laravel-jetstream) and clone it locally
+2. Install [zcli](https://docs.zerops.io/references/cli#get-started), create a new [personal access token](https://app.zerops.io/settings/token-management)
+3. Enter `zcli vpn up {{ .ProjectId }}` to your terminal (this will require [Wireguard installed](https://docs.zerops.io/references/vpn) on your machine)
+4. Create `.env` from `.env.example` and fill in database access details from [`db` service detail](https://app.zerops.io/service-stack/{{ .Services.db.id }}/access-details)
+5. Start the development server, which is now utilizing database, redis and storage from Zerops
 <br/><br/>
 
 ### Try the build & deploy pipeline
-Since you are already logged into zcli, all you need is to create your own repository from our [GitHub template](https://github.com/zeropsio/recipe-laravel-jetstream), clone it locally you can simply enter `zcli push` to your terminal in the root of the freshly cloned project.
+Since you are already logged into zcli you can simply enter `zcli push` to your terminal in the root of the freshly cloned project.
 
 To setup automatic CI/CD, navigate to [Pipelines & CI/CD settings](https://app.zerops.io/service-stack/{{ .Services.app.id }}/deploy) and connect the service with your new GitHub repository, setting the trigger to **Push to Branch**
 
