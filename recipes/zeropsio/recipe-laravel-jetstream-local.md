@@ -30,10 +30,10 @@ To setup automatic CI/CD, navigate to [Pipelines & CI/CD settings](https://app.z
 
 ### Want to integrate Zerops with your existing Jetstream app?
 See the list of [changes made over the default installation](https://github.com/zeropsio/recipe-laravel-jetstream/blob/main/README.md#changes-made-over-the-default-installation) to replicate the steps and copy the configs to your own application.
-
+<br /><br />
 ### Understand Zerops Core Concepts
 For a complete step-by-step guide demonstrating how to use Zerops effectively with Laravel, check out our [detailed Laravel tutorial](https://docs.zerops.io/frameworks/laravel/introduction).
-
+<br /><br />
 ### Explore Production Setups
 Try [Production](https://app.zerops.io/recipe/laravel-jetstream-prod) with Serious project core and HA services when you need enterprise-grade reliability.
 <br /><br />

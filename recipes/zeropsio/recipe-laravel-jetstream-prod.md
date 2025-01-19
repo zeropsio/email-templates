@@ -21,10 +21,10 @@ While Zerops supports various CI/CD workflows, let's start with the simplest pat
 
 ### Want to integrate Zerops with your existing Jetstream app?
 See the list of [changes made over the default installation](https://github.com/zeropsio/recipe-laravel-jetstream/blob/main/README.md#changes-made-over-the-default-installation) to replicate the steps and copy the configs to your own application.
-
+<br /><br />
 ### Understand Zerops Core Concepts
 For a complete step-by-step guide demonstrating how to use Zerops effectively with Laravel, check out our [detailed Laravel tutorial](https://docs.zerops.io/frameworks/laravel/introduction).
-
+<br /><br />
 ### Explore Development Setup
 Check out our [Development setup](https://app.zerops.io/recipe/laravel-jetstream-devel) - it shows how the same application can be deployed with lower resource requirements by running all services in Non-HA mode, plus includes Mail service for email testing. This Non-HA version is perfectly suitable for development, testing, or less demanding websites and applications.
 <br /><br />
