@@ -1,8 +1,8 @@
 [//]: # (Your Zerops recipe {{ .Recipe.Name }} is live! What next?)
 
-**Laravel Jetstream development environment** ([recipe source](https://github.com/zeropsio/recipe-laravel-jetstream)) was successfully deployed to Zerops. You can check the [live application here]({{ .Services.app.SubdomainUrl }}) and see the project detail in the [Zerops dashboard](https://app.zerops.io/project/{{ .ProjectId }}).
+**Laravel Jetstream production environment** ([recipe source](https://github.com/zeropsio/recipe-laravel-jetstream)) was successfully deployed to Zerops. You can check the [live application here]({{ .Services.app.SubdomainUrl }}) and see the project detail in the [Zerops dashboard](https://app.zerops.io/project/{{ .ProjectId }}).
 
-The app has been set up to utilize Valkey (Redis-compatible KV store) to handle sessions and cache, with the filesystem of both Laravel and Jetstream-specific parts configured to utilize Zerops' built-in object storage. For the development environment specifically, the setup includes Mailpit, which is a "fake SMTP" server for dev purposes. The build and deploy process ([zerops.yml](https://github.com/zeropsio/recipe-laravel-jetstream/blob/main/zerops.yml)) has been set up to properly migrate the database on each deploy, cleanup/cache files, and implement health and readiness checks.
+The app has been set up to utilize Valkey (Redis-compatible KV store) to handle sessions and cache, with the filesystem of both Laravel and Jetstream-specific parts configured to utilize Zerops' built-in object storage. The build and deploy process ([zerops.yml](https://github.com/zeropsio/recipe-laravel-jetstream/blob/main/zerops.yml)) has been set up to properly migrate the database on each deploy, cleanup/cache files, and implement health and readiness checks.
 
 This recipe showcases a production-ready integration of Jetstream apps to Zerops. The fact this environment is "development" comes just from its minimal, cost-efficient resource allocation and [Lightweight](https://docs.zerops.io/features/pricing#understanding-projects) project core package used.
 <br/><br/>
@@ -21,12 +21,12 @@ While Zerops supports various CI/CD workflows, let's start with the simplest pat
 
 ### Want to integrate Zerops with your existing Jetstream app?
 See the list of [changes made over the default installation](https://github.com/zeropsio/recipe-laravel-jetstream/blob/main/README.md#changes-made-over-the-default-installation) to replicate the steps and copy the configs to your own application.
-<br /><br />
+
 ### Understand Zerops Core Concepts
 For a complete step-by-step guide demonstrating how to use Zerops effectively with Laravel, check out our [detailed Laravel tutorial](https://docs.zerops.io/frameworks/laravel/introduction).
-<br /><br />
-### Explore Production Setups
-Try [Production](https://app.zerops.io/recipe/laravel-jetstream-prod) with Serious project core and HA services when you need enterprise-grade reliability.
+
+### Explore Development Setup
+Check out our [Development setup](https://app.zerops.io/recipe/laravel-jetstream-devel) - it shows how the same application can be deployed with lower resource requirements by running all services in Non-HA mode, plus includes Mail service for email testing. This Non-HA version is perfectly suitable for development, testing, or less demanding websites and applications.
 <br /><br />
 ### Need Help?
 You'll find our entire dev team on [Zerops Discord server](https://discord.gg/zeropsio), join for help from both us and the community. Alternatively email us at support@zerops.io.
