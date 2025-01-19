@@ -26,7 +26,7 @@ See the list of [changes made over the default installation](https://github.com/
 For a complete step-by-step guide demonstrating how to use Zerops effectively with Laravel, check out our [detailed Laravel tutorial](https://docs.zerops.io/frameworks/laravel/introduction).
 <br /><br />
 ### Explore Development Setup
-Check out our [Development setup](https://app.zerops.io/recipe/laravel-jetstream-devel) - it shows how the same application can be deployed with lower resource requirements by running all services in Non-HA mode, plus includes Mail service for email testing. This Non-HA version is perfectly suitable for development, testing, or less demanding websites and applications.
+Check out our [Development setup](https://app.zerops.io/recipe/laravel-jetstream-devel) - it shows how the same application can be deployed with lower resource requirements by running all services in Non-HA mode, plus includes Mailpit service for email testing purposes. This Non-HA version is perfectly suitable for development, testing, or less demanding websites and applications.
 <br /><br />
 ### Need Help?
 You'll find our entire dev team on [Zerops Discord server](https://discord.gg/zeropsio), join for help from both us and the community. Alternatively email us at support@zerops.io.
