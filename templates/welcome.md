@@ -6,7 +6,7 @@ You'll find our entire dev team on [Zerops Discord server](https://discord.gg/ze
 <br/><br/>
 
 ### Explore Zerops through recipes (quickrun)
-The fastest way to dive into Zerops is through our [one-click recipes](https://app.zerops.io/dashboard/recipes). Choose one similar to your tech stack, click deploy and within minutes you have a fully configured environment to explore.
+The fastest way to dive into Zerops is through our [one-click recipes]({{ .ZeropsAppUrl }}/dashboard/recipes). Choose one similar to your tech stack, click deploy and within minutes you have a fully configured environment to explore.
 <br/><br/>
 
 ### What makes Zerops different
@@ -24,10 +24,10 @@ The fastest way to dive into Zerops is through our [one-click recipes](https://a
 <br/><br/>
 
 ### Resources worth bookmarking
-- **[Zerops dashboard](https://app.zerops.io/)**
+- **[Zerops dashboard]({{ .ZeropsAppUrl }}/)**
 - **[Documentation](https://docs.zerops.io/)**
 - **[CLI Reference](https://docs.zerops.io/references/cli)**
-- **[Recipes](https://app.zerops.io/dashboard/recipes)**
+- **[Recipes]({{ .ZeropsAppUrl }}/dashboard/recipes)**
 - **Support email** — support@zerops.io
 - **CEO email** - ales@zerops.io
 <br/><br/>

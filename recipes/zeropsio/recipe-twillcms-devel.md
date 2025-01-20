@@ -1,21 +1,22 @@
 [//]: # (Your Zerops recipe {{ .Recipe.Name }} is live! What next?)
 
-**Twill CMS development environment** ([recipe source](https://github.com/zeropsio/recipe-twill)) was successfully deployed to Zerops. You can check the [live application here]({{ .Services.app.SubdomainUrl }}) and see the project detail in the [Zerops dashboard](https://app.zerops.io/project/{{ .ProjectId }}).
+**Twill CMS development environment** ([recipe source](https://github.com/zeropsio/recipe-twill)) was successfully deployed to Zerops. You can check the [live application here]({{ .Services.app.SubdomainUrl }}) and see the project detail in the [Zerops dashboard]({{ .ZeropsAppUrl }}/project/{{ .ProjectId }}).
 
 The app has been set up to utilize Valkey (Redis-compatible KV store) to handle sessions and cache, with the filesystem of both Laravel and Twill-specific parts configured to utilize Zerops' built-in object storage. For the development environment specifically, the setup includes Mailpit, which is a "fake SMTP" server for dev purposes. The build and deploy process ([zerops.yml](https://github.com/zeropsio/recipe-twill/blob/main/zerops.yml)) has been set up to properly migrate the database on each deploy, cleanup/cache files, and implement health and readiness checks.
 
-This recipe showcases a production-ready integration of Twill apps to Zerops. The fact this environment is "development" comes just from its minimal, cost-efficient resource allocation and selection of the [Lightweight](https://docs.zerops.io/features/pricing#understanding-projects) core package. If you want to try the "production" environment setup with HA services and enterprise grade reliability see — [production environment recipe](https://app.zerops.io/recipe/twillcms-prod)
+This recipe showcases a production-ready integration of Twill apps to Zerops. The fact this environment is "development" comes just from its minimal, cost-efficient resource allocation and selection of the [Lightweight](https://docs.zerops.io/features/pricing#understanding-projects) core package. If you want to try the "production" environment setup with HA services and enterprise grade reliability see — [production environment recipe]({{ .ZeropsAppUrl }}/recipe/twillcms-prod)
 <br/><br/>
 
 ### Try the build & deploy pipeline in 30 seconds
 While Zerops supports various CI/CD workflows (CLI, GitHub Actions, built-in CI/CD), let's start with the simplest path to get you familiar with the core concepts:
 
 1. Create your own repository from our [GitHub template for Twill](https://github.com/zeropsio/recipe-twill)
-2. Navigate to [Pipelines & CI/CD settings](https://app.zerops.io/service-stack/{{ .Services.app.Id }}/deploy) and connect the service with your new GitHub repository, setting the trigger to **Push to Branch**
+2. Navigate to [Pipelines & CI/CD settings]({{ .ZeropsAppUrl }}/service-stack/{{ .Services.app.Id }}/deploy) and connect the service with your new GitHub repository, setting the trigger to **Push to Branch**
 
 **Now test the deployment pipeline:**
+
 - Make a small change directly in the GitHub UI
-- Commit the change and watch the magic happen in [project detail](https://app.zerops.io/project/{{ .ProjectId }})
+- Commit the change and watch the magic happen in [project detail]({{ .ZeropsAppUrl }}/project/{{ .ProjectId }})
 
 <br/>
 
