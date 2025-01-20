@@ -4,7 +4,7 @@
 
 The app has been set up to utilize Valkey (Redis-compatible KV store) to handle sessions and cache, with the filesystem of both Laravel and Twill-specific parts configured to utilize Zerops' built-in object storage. For the development environment specifically, the setup includes Mailpit, which is a "fake SMTP" server for dev purposes. The build and deploy process ([zerops.yml](https://github.com/zeropsio/recipe-twill/blob/main/zerops.yml)) has been set up to properly migrate the database on each deploy, cleanup/cache files, and implement health and readiness checks.
 
-This recipe showcases a production-ready integration of Twill apps to Zerops. The fact this environment is for local development comes just from its minimal, cost-efficient resource allocation and selection of the [Lightweight](https://docs.zerops.io/features/pricing#understanding-projects) core package and the fact you'd only start the services when you are actively working on the project. If you want to try the "production" environment setup with HA services and enterprise grade reliability see — [production environment recipe]({{ .ZeropsAppUrl }}/recipe/twillcms-prod)
+This recipe showcases a production-ready integration of Twill apps to Zerops. The fact this environment is for local development comes just from its minimal, cost-efficient resource allocation and selection of the [Lightweight](https://docs.zerops.io/features/pricing#understanding-projects) core package and the fact you'd only start the services when you are actively working on the project. If you want to try the "production" environment setup with HA services and enterprise grade reliability deploy — [production environment recipe]({{ .ZeropsAppUrl }}/recipe/twillcms-prod)
 
 <br/><br/>
 
