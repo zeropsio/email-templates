@@ -33,7 +33,7 @@ To setup the built-in automatic CI/CD, navigate to [Pipelines & CI/CD settings](
 See the list of [changes made over the default installation](https://github.com/zeropsio/recipe-twill/blob/main/README.md#changes-made-over-the-default-installation) to replicate the steps and copy the configs to your own application.
 <br /><br />
 
-### Understand Zerops Core Concepts
+### Get to know Zerops core concepts in depth
 If you want to try integrating Zerops from scratch on a new Laravel project, check our [step-by-step tutorial](https://docs.zerops.io/frameworks/laravel/introduction) which demonstrates how to use Zerops effectively with Laravel.
 <br /><br />
 
