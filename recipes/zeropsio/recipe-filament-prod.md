@@ -12,7 +12,7 @@ This recipe showcases a production-ready integration of Filament apps to Zerops,
 While Zerops supports various CI/CD workflows (CLI, GitHub Actions, built-in CI/CD), let's start with the simplest path to get you familiar with the core concepts:
 
 1. Create your own repository from our [GitHub template for Filament](https://github.com/zeropsio/recipe-filament)
-2. Navigate to [Pipelines & CI/CD settings](https://app.zerops.io/service-stack/{{ .Services.app.id }}/deploy) and connect the service with your new GitHub repository, setting the trigger to **Push to Branch**
+2. Navigate to [Pipelines & CI/CD settings](https://app.zerops.io/service-stack/{{ .Services.app.Id }}/deploy) and connect the service with your new GitHub repository, setting the trigger to **Push to Branch**
 
 **Now test the deployment pipeline:**
 - Make a small change directly in the GitHub UI

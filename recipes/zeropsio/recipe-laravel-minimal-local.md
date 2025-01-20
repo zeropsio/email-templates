@@ -20,7 +20,7 @@ This recipe showcases a production-ready integration of Laravel apps to Zerops. 
 ### Try the build & deploy pipeline
 Since you are already logged into zcli you can simply enter `zcli push` to your terminal in the root of the freshly cloned project.
 
-To setup the built-in automatic CI/CD, navigate to [Pipelines & CI/CD settings](https://app.zerops.io/service-stack/{{ .Services.app.id }}/deploy) and connect the service with your new GitHub repository, setting the trigger to **Push to Branch**
+To setup the built-in automatic CI/CD, navigate to [Pipelines & CI/CD settings](https://app.zerops.io/service-stack/{{ .Services.app.Id }}/deploy) and connect the service with your new GitHub repository, setting the trigger to **Push to Branch**
 
 **Now test the deployment pipeline:**
 - Make a small change directly in the GitHub UI
