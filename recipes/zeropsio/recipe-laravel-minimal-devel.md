@@ -11,7 +11,7 @@ This recipe showcases a production-ready integration of Laravel apps to Zerops. 
 While Zerops supports various CI/CD workflows (CLI, GitHub Actions, built-in CI/CD), let's start with the simplest path to get you familiar with the core concepts:
 
 1. Create your own repository from our [GitHub template for Laravel](https://github.com/zeropsio/recipe-laravel-minimal)
-2. Navigate to [Pipelines & CI/CD settings](https://app.zerops.io/service-stack/{{ .Services.app.id }}/deploy) and connect the service with your new GitHub repository, setting the trigger to **Push to Branch**
+2. Navigate to [Pipelines & CI/CD settings](https://app.zerops.io/service-stack/{{ .Services.app.Id }}/deploy) and connect the service with your new GitHub repository, setting the trigger to **Push to Branch**
 
 **Now test the deployment pipeline:**
 - Make a small change directly in the GitHub UI
