@@ -11,7 +11,7 @@ This recipe showcases a production-ready integration of Jetstream apps to Zerops
 ### Try the build & deploy pipeline in 30 seconds
 While Zerops supports various CI/CD workflows (CLI, GitHub Actions, built-in CI/CD), let's start with the simplest path to get you familiar with the core concepts:
 
-1. Create your own repository from our [GitHub template](https://github.com/zeropsio/recipe-laravel-jetstream)
+1. Create your own repository from our [GitHub template for Laravel Jetstream](https://github.com/zeropsio/recipe-laravel-jetstream)
 2. Navigate to [Pipelines & CI/CD settings](https://app.zerops.io/service-stack/{{ .Services.app.id }}/deploy) and connect the service with your new GitHub repository, setting the trigger to **Push to Branch**
 
 **Now test the deployment pipeline:**
