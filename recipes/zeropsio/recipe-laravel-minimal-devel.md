@@ -4,7 +4,7 @@
 
 The app has been set up to utilize PostgreSQL service. The build and deploy process ([zerops.yml](https://github.com/zeropsio/recipe-laravel-minimal/blob/main/zerops.yml)) has been set up to properly migrate the database on each deploy, cleanup/cache files, and implement health and readiness checks.
 
-This recipe showcases a production-ready integration of basic Laravel apps to Zerops. The fact this environment is called **development** comes just from its minimal, cost-efficient resource allocation and selection of the [Lightweight](https://docs.zerops.io/features/pricing#understanding-projects) core package. If you want to try the "production" environment setup with HA services and enterprise grade reliability deploy — [production environment recipe]({{ .ZeropsAppUrl }}/recipe/laravel-minimal-prod)
+This recipe showcases a production-ready integration of basic Laravel apps to Zerops. The fact this environment is called **development** comes just from its minimal, cost-efficient resource allocation, selection of the [Lightweight](https://docs.zerops.io/features/pricing#understanding-projects) core package. If you want to try the "production" environment setup with HA services and enterprise grade reliability deploy — [production environment recipe]({{ .ZeropsAppUrl }}/recipe/laravel-minimal-prod)
 
 If you are looking for more advanced examples, take a loot at other recipes in [Zerops Laravel docs](https://docs.zerops.io/frameworks/laravel#quick-start).
 <br/><br/>
