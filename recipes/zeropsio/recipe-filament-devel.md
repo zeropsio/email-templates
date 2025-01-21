@@ -4,7 +4,7 @@
 
 The app has been set up to utilize Valkey (Redis-compatible KV store) to handle sessions and cache, with the filesystem of both Laravel and Filament-specific parts configured to utilize Zerops' built-in object storage. For the development environment specifically, the setup includes Mailpit, which is a "fake SMTP" server for dev purposes. The build and deploy process ([zerops.yml](https://github.com/zeropsio/recipe-filament/blob/main/zerops.yml)) has been set up to properly migrate the database on each deploy, cleanup/cache files, and implement health and readiness checks.
 
-This recipe showcases a production-ready integration of Filament apps to Zerops. The fact this environment is "development" comes just from its minimal, cost-efficient resource allocation and selection of the [Lightweight](https://docs.zerops.io/features/pricing#understanding-projects) core package. If you want to try the "production" environment setup with HA services and enterprise grade reliability deploy — [production environment recipe]({{ .ZeropsAppUrl }}/recipe/filament-prod)
+This recipe showcases a production-ready integration of Filament with Zerops. The fact this environment is called **development** comes just from its minimal, cost-efficient resource allocation and selection of the [Lightweight](https://docs.zerops.io/features/pricing#understanding-projects) core package. If you want to try the "production" environment setup with HA services and enterprise grade reliability deploy — [production environment recipe]({{ .ZeropsAppUrl }}/recipe/filament-prod)
 <br/><br/>
 
 ### Try the build & deploy pipeline in 30 seconds

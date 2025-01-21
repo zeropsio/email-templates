@@ -4,7 +4,7 @@
 
 The app has been set up to utilize Valkey (Redis-compatible KV store) to handle sessions and cache, with the filesystem of both Laravel and Twill-specific parts configured to utilize Zerops' built-in object storage. The build and deploy process ([zerops.yml](https://github.com/zeropsio/recipe-twill/blob/main/zerops.yml)) has been set up to properly migrate the database on each deploy, cleanup/cache files, and implement health and readiness checks.
 
-This recipe showcases a **production-ready** integration of Twill apps with Zerops, with all services set to high availability and [Serious](https://docs.zerops.io/features/pricing#understanding-projects) core package used for enterprise grade reliability. If you want to try more cost-efficient environment deploy — [development / small production environment recipe]({{ .ZeropsAppUrl }}/recipe/twillcms-devel)
+This recipe showcases a **production-ready** integration of TwillCMS with Zerops, with all services set to high availability and [Serious](https://docs.zerops.io/features/pricing#understanding-projects) core package used for enterprise grade reliability. If you want to try more cost-efficient environment deploy — [development / small production environment recipe]({{ .ZeropsAppUrl }}/recipe/twillcms-devel)
 
 <br/><br/>
 
