@@ -11,7 +11,7 @@ This recipe showcases a production-ready integration of Jetstream apps to Zerops
 1. Create your own repository from our [GitHub template](https://github.com/zeropsio/recipe-laravel-jetstream) and clone it locally
 2. Install [zcli](https://docs.zerops.io/references/cli#get-started), create a new [personal access token]({{ .ZeropsAppUrl }}/settings/token-management)
 3. Enter `zcli vpn up {{ .ProjectId }}` to your terminal (this will require [Wireguard installed](https://docs.zerops.io/references/vpn) on your machine)
-4. Create `.env` from `.env.example` and fill in database access details from [`db` service detail]({{ .ZeropsAppUrl }}/service-stack/{{ .Services.db.id }}/access-details)
+4. Create `.env` from `.env.example` and fill in database access details from [`db` service detail]({{ .ZeropsAppUrl }}/service-stack/{{ .Services.db.Id }}/access-details)
 5. Run `composer install && php artisan key:generate && npm install && npm run dev`
 6. Start the development server with `php artisan serve`, or use your preferred setup (Valet, Herd, Sail) - your application will utilize database, redis and storage from Zerops
 <br/><br/>
