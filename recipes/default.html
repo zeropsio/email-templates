@@ -4,7 +4,7 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="preload" as="image" href="https://storage-prg1.zerops.io/4gfos-storage/zerops_logo2_80f8b9099d.png" />
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
     <meta name="x-apple-disable-message-reformatting" />
@@ -53,6 +53,7 @@
       }
     </style>
   </head>
+
   <body style="background-color: #eeeeee; margin: 0; padding: 0">
     <div
       style="display: none; overflow: hidden; line-height: 1px; opacity: 0; max-height: 0; max-width: 0"
@@ -81,7 +82,7 @@
               <tbody>
                 <tr>
                   <td>
-                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; margin: 0 0 48px; text-align: left">
+                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; margin: 0 0 120px; text-align: left">
                       <tbody>
                         <tr>
                           <td align="left">
@@ -98,14 +99,15 @@
                       </tbody>
                     </table>
 
-                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 0 56px">
+                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 0 120px">
                       <tbody>
                         <tr>
                           <td>
-                            <h1 class="hero-title" style="margin: 0; color: #164742; font-size: 32px; line-height: 48px; font-weight: 600; letter-spacing: -0.5px">
+                            <h1 class="hero-title" style="margin: 0; color: #164742; font-size: 32px; line-height: 48px; font-weight: 500; letter-spacing: -0.5px">
                               Your recipe <span style="color: #15D7C4; font-weight: 800">{{ .Recipe.Name }}</span> is live!
                             </h1>
-                            <p style="font-size: 16px; line-height: 22px; margin: 24px 0 0; color: #164742">
+
+                            <p style="font-size: 16px; line-height: 22px; margin: 56px 0 0; color: #164742; font-weight: 400">
                               Hey {{ .User.FirstName }}, your Zerops recipe has finished deploying and your services are now running.
                             </p>
                           </td>
@@ -113,14 +115,15 @@
                       </tbody>
                     </table>
 
-                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 0 56px">
+                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 0 120px">
                       <tbody>
                         <tr>
                           <td>
-                            <h2 style="margin: 0 0 24px; color: #164742; font-size: 22px; line-height: 32px; font-weight: 700">
+                            <h2 style="margin: 0 0 24px; color: #164742; font-size: 22px; line-height: 32px; font-weight: 600">
                               What’s next?
                             </h2>
-                            <p style="font-size: 14px; line-height: 22px; margin: 0 0 24px; color: #315f58">
+
+                            <p style="font-size: 14px; line-height: 22px; margin: 0 0 24px; color: #315f58; font-weight: 400">
                               After deploying one of the environments and getting to know Zerops, you have two paths forward: clone the repositories and use the recipe as a template, or integrate the setup with your own application.
                             </p>
 
@@ -132,20 +135,33 @@
                                       <tbody>
                                         <tr>
                                           <td>
-                                            <p style="font-size: 22px; line-height: 26px; margin: 0 0 10px; color: #15D7C4; font-weight: 900; text-align: right">1</p>
-                                            <p class="option-title" style="font-size: 15px; line-height: 21px; height: 42px; margin: 0 0 12px; color: #164742; font-weight: 800">
-                                              Use recipe as a template
-                                            </p>
-                                            <p class="option-body" style="font-size: 12px; line-height: 18px; height: 88px; margin: 0 0 18px; color: #315f58">
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 0 18px">
+                                              <tbody>
+                                                <tr>
+                                                  <td width="28" style="vertical-align: top">
+                                                    <span style="display: inline-block; width: 22px; height: 22px; border-radius: 999px; background-color: #15D7C4; color: #ffffff; font-size: 12px; line-height: 22px; font-weight: 800; text-align: center">1</span>
+                                                  </td>
+                                                  <td style="vertical-align: top">
+                                                    <p class="option-title" style="font-size: 15px; line-height: 21px; margin: 0; color: #164742; font-weight: 800">
+                                                      Use recipe as a template
+                                                    </p>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+
+                                            <p class="option-body" style="font-size: 12px; line-height: 18px; height: 88px; margin: 0 0 18px; color: #315f58; font-weight: 400">
                                               Start from the deployed setup, clone the template repositories, and use this recipe as the foundation for your own project.
                                             </p>
+
                                             <a
                                               class="button"
                                               href="{{ .ZeropsAppUrl }}/recipes"
                                               style="line-height: 16px; text-decoration: none; display: inline-block; max-width: 100%; width: 100%; padding: 12px 0; border-radius: 5px; background-color: #15D7C4; color: #ffffff; font-size: 10px; font-weight: 900; letter-spacing: 0.8px; text-transform: uppercase; text-align: center"
                                               target="_blank"
                                             >View template guide</a>
-                                            <p style="font-size: 10px; line-height: 15px; margin: 10px 0 0; color: #789590">
+
+                                            <p style="font-size: 10px; line-height: 15px; margin: 10px 0 0; color: #789590; font-weight: 400">
                                               Best if you want to start from this recipe.
                                             </p>
                                           </td>
@@ -153,25 +169,39 @@
                                       </tbody>
                                     </table>
                                   </td>
+
                                   <td class="desktop-column" style="width: 50%; padding-left: 8px; vertical-align: top; box-sizing: border-box">
                                     <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" class="option-card" style="height: 270px; padding: 20px; border-radius: 12px; background-color: #ffffff; vertical-align: top; box-sizing: border-box">
                                       <tbody>
                                         <tr>
                                           <td>
-                                            <p style="font-size: 22px; line-height: 26px; margin: 0 0 10px; color: #15D7C4; font-weight: 900; text-align: right">2</p>
-                                            <p class="option-title" style="font-size: 15px; line-height: 21px; height: 42px; margin: 0 0 12px; color: #164742; font-weight: 800">
-                                              Integrate with your apps
-                                            </p>
-                                            <p class="option-body" style="font-size: 12px; line-height: 18px; height: 88px; margin: 0 0 18px; color: #315f58">
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 0 18px">
+                                              <tbody>
+                                                <tr>
+                                                  <td width="28" style="vertical-align: top">
+                                                    <span style="display: inline-block; width: 22px; height: 22px; border-radius: 999px; background-color: #15D7C4; color: #ffffff; font-size: 12px; line-height: 22px; font-weight: 800; text-align: center">2</span>
+                                                  </td>
+                                                  <td style="vertical-align: top">
+                                                    <p class="option-title" style="font-size: 15px; line-height: 21px; margin: 0; color: #164742; font-weight: 800">
+                                                      Integrate with your apps
+                                                    </p>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+
+                                            <p class="option-body" style="font-size: 12px; line-height: 18px; height: 88px; margin: 0 0 18px; color: #315f58; font-weight: 400">
                                               Connect your own application or repository to the infrastructure created by this recipe.
                                             </p>
+
                                             <a
                                               class="button"
                                               href="{{ .ZeropsAppUrl }}/recipes"
                                               style="line-height: 16px; text-decoration: none; display: inline-block; max-width: 100%; width: 100%; padding: 12px 0; border-radius: 5px; background-color: #15D7C4; color: #ffffff; font-size: 10px; font-weight: 900; letter-spacing: 0.8px; text-transform: uppercase; text-align: center"
                                               target="_blank"
                                             >View integration guide</a>
-                                            <p style="font-size: 10px; line-height: 15px; margin: 10px 0 0; color: #789590">
+
+                                            <p style="font-size: 10px; line-height: 15px; margin: 10px 0 0; color: #789590; font-weight: 400">
                                               Best if you already have an app and want to run it on Zerops.
                                             </p>
                                           </td>
@@ -187,11 +217,11 @@
                       </tbody>
                     </table>
 
-                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 0 56px">
+                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 0 120px">
                       <tbody>
                         <tr>
                           <td>
-                            <h2 style="margin: 0 0 24px; color: #164742; font-size: 22px; line-height: 32px; font-weight: 700">
+                            <h2 style="margin: 0 0 24px; color: #164742; font-size: 22px; line-height: 32px; font-weight: 600">
                               Deployed services
                             </h2>
 
@@ -200,19 +230,31 @@
                               <tbody>
                                 <tr>
                                   <td style="padding: 14px 16px">
-                                    <p style="font-size: 14px; line-height: 20px; margin: 0; color: #164742; font-weight: 800">
-                                      {{ .Hostname }}
-                                    </p>
-                                    <p style="font-size: 12px; line-height: 18px; margin: 2px 0 8px; color: #789590; font-family: monospace">
-                                      {{ .Type }}
-                                    </p>
-                                    {{- if .SubdomainUrl }}
-                                    <a
-                                      href="{{ .SubdomainUrl }}"
-                                      style="color: #15D7C4; text-decoration-line: none; font-size: 10px; line-height: 15px; font-weight: 900; letter-spacing: 0.8px; text-transform: uppercase; text-decoration: none"
-                                      target="_blank"
-                                    >Open app</a>
-                                    {{- end }}
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                      <tbody>
+                                        <tr>
+                                          <td style="vertical-align: top">
+                                            <p style="font-size: 14px; line-height: 20px; margin: 0; color: #164742; font-weight: 800">
+                                              {{ .Hostname }}
+                                            </p>
+
+                                            <p style="font-size: 12px; line-height: 18px; margin: 2px 0 0; color: #789590; font-family: monospace; font-weight: 400">
+                                              {{ .Type }}
+                                            </p>
+                                          </td>
+
+                                          <td width="90" align="right" style="vertical-align: middle; text-align: right">
+                                            {{- if .SubdomainUrl }}
+                                            <a
+                                              href="{{ .SubdomainUrl }}"
+                                              style="color: #15D7C4; text-decoration-line: none; font-size: 10px; line-height: 15px; font-weight: 900; letter-spacing: 0.8px; text-transform: uppercase; text-decoration: none"
+                                              target="_blank"
+                                            >Open app</a>
+                                            {{- end }}
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
                                   </td>
                                 </tr>
                               </tbody>
@@ -227,7 +269,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            <h2 style="margin: 0 0 24px; color: #164742; font-size: 22px; line-height: 32px; font-weight: 700">
+                            <h2 style="margin: 0 0 24px; color: #164742; font-size: 22px; line-height: 32px; font-weight: 600">
                               Need help?
                             </h2>
 
@@ -238,9 +280,11 @@
                                     <p style="font-size: 15px; line-height: 21px; margin: 0 0 8px; color: #164742; font-weight: 800">
                                       Not sure which path to choose?
                                     </p>
-                                    <p style="font-size: 12px; line-height: 19px; margin: 0 0 12px; color: #315f58">
+
+                                    <p style="font-size: 12px; line-height: 19px; margin: 0 0 12px; color: #315f58; font-weight: 400">
                                       If you want to build from the deployed setup, start with the template path. If you already have an app, follow the integration path.
                                     </p>
+
                                     <a
                                       href="{{ .ZeropsAppUrl }}/recipes"
                                       style="color: #15D7C4; text-decoration-line: none; font-size: 11px; line-height: 16px; font-weight: 900; letter-spacing: 0.8px; text-transform: uppercase; text-decoration: none"
@@ -258,9 +302,11 @@
                                     <p style="font-size: 15px; line-height: 21px; margin: 0 0 8px; color: #164742; font-weight: 800">
                                       Looking for deploys, public access, or logs?
                                     </p>
-                                    <p style="font-size: 12px; line-height: 19px; margin: 0 0 12px; color: #315f58">
+
+                                    <p style="font-size: 12px; line-height: 19px; margin: 0 0 12px; color: #315f58; font-weight: 400">
                                       Check the Zerops docs for build and deploy pipelines, public access, and runtime logs.
                                     </p>
+
                                     <a href="https://docs.zerops.io/features/pipeline" style="color: #15D7C4; text-decoration-line: none; font-size: 11px; line-height: 16px; font-weight: 900; letter-spacing: 0.8px; text-transform: uppercase; text-decoration: none" target="_blank">Build &amp; deploy ↗</a>
                                     <span style="font-size: 11px; line-height: 16px; color: #789590"> · </span>
                                     <a href="https://docs.zerops.io/features/access" style="color: #15D7C4; text-decoration-line: none; font-size: 11px; line-height: 16px; font-weight: 900; letter-spacing: 0.8px; text-transform: uppercase; text-decoration: none" target="_blank">Public access ↗</a>
@@ -279,7 +325,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            <p style="font-size: 15px; line-height: 23px; margin: 0; color: #164742">
+                            <p style="font-size: 15px; line-height: 23px; margin: 0; color: #164742; font-weight: 400">
                               Need something else?<br />Join
                               <a href="https://discord.gg/zeropsio" style="color: #15D7C4; text-decoration-line: none; font-weight: 800; text-decoration: underline" target="_blank">Zerops Discord</a>
                               and we’ll help you out.
@@ -302,7 +348,8 @@
                     </table>
 
                     <hr style="width: 100%; border: none; border-top: 1px solid #c8d8d5; margin: 20px 0 18px" />
-                    <p style="font-size: 11px; line-height: 17px; margin: 0; color: #789590">
+
+                    <p style="font-size: 11px; line-height: 17px; margin: 0; color: #789590; font-weight: 400">
                       © 2026 Zerops<br />zerops.io
                     </p>
                   </td>
