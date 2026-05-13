@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "email:install": "npm --prefix react-email ci",
+    "email:build": "npm --prefix react-email run build",
+    "email:generate": "npm --prefix react-email run build && node scripts/generate-go-template.mjs"
+  }
+}
