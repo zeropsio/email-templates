@@ -1,0 +1,13 @@
+zerops:
+  - setup: web
+    build:
+      base: nodejs@22
+      buildCommands:
+        - npm ci
+        - npm run build
+      deployFiles:
+        - out/~
+      cache:
+        - node_modules
+    run:
+      base: static
