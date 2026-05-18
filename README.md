@@ -157,6 +157,25 @@ System templates live in `templates/` and are referenced by exact filename from 
   |---------------------|------------------------------|---------|
   | `.PromoCreditBonus` | Amount of promo credit bonus | `50`    |
 
+- `templates/zcp-online.html`
+
+  Sent on successful service create when the service's `recipeSource` is `zeropsio/zcp`. One email per active account member.
+
+  | Variable               | Description                                                                  | Example                                  |
+  |------------------------|------------------------------------------------------------------------------|------------------------------------------|
+  | `.ZeropsAppUrl`        | Base URL of the Zerops application                                           | `https://app.zerops.io`                  |
+  | `.Account.Id`          | Account's UUID (useful for building URLs)                                    | `nLDPSPipR42pJVkL3K2a9g`                 |
+  | `.Account.Name`        | Account's display name                                                       | `Acme Corp`                              |
+  | `.User.Id`             | Emailed user's UUID                                                          | `nLDPSPipR42pJVkL3K2a9g`                 |
+  | `.User.FirstName`      | Emailed user's first name                                                    | `Bob`                                    |
+  | `.User.Email`          | Emailed user's email address                                                 | `bob@example.com`                        |
+  | `.Project.Id`          | Project UUID (useful for building URLs)                                      | `nLDPSPipR42pJVkL3K2a9g`                 |
+  | `.Project.Name`        | Project's display name                                                       | `my-project`                             |
+  | `.Service.Id`          | ZCP service UUID (useful for building URLs)                                  | `nLDPSPipR42pJVkL3K2a9g`                 |
+  | `.Service.Hostname`    | ZCP service hostname                                                         | `zcp`                                    |
+  | `.Service.Type`        | Service type                                                                 | `zcp@1`                                  |
+  | `.Service.SubdomainUrl`| Optional public subdomain URL of the ZCP service (browser IDE entry point)   | `https://zcp-7-8080.app-tatami.zerops.dev` |
+
 ## Go Template 101
 
 - `{{ if .Services.app.GitSource }}Has git source -> {{ .Services.app.GitSource }}!{{ else }}No git source :/{{ end }}` -> if/else, check for optional values
