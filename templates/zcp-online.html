@@ -1,0 +1,49 @@
+<!-- ZCP service {{ .Service.Hostname }} is online -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ZCP service is online</title>
+</head>
+<body style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;color:#164742;max-width:580px;margin:0 auto;padding:24px;">
+  <h1>ZCP service <span style="color:#00c7b7;">{{ .Service.Hostname }}</span> is online</h1>
+
+  <p>Hey {{ .User.FirstName }},</p>
+
+  <p>Your ZCP service in project <strong>{{ .Project.Name }}</strong> is ready.</p>
+
+  <h2>Variable dump (test template)</h2>
+  <ul>
+    <li><code>.ZeropsAppUrl</code> = <a href="{{ .ZeropsAppUrl }}">{{ .ZeropsAppUrl }}</a></li>
+    <li><code>.Account.Id</code> = {{ .Account.Id }}</li>
+    <li><code>.Account.Name</code> = {{ .Account.Name }}</li>
+    <li><code>.User.Id</code> = {{ .User.Id }}</li>
+    <li><code>.User.FirstName</code> = {{ .User.FirstName }}</li>
+    <li><code>.User.Email</code> = {{ .User.Email }}</li>
+    <li><code>.Project.Id</code> = {{ .Project.Id }}</li>
+    <li><code>.Project.Name</code> = {{ .Project.Name }}</li>
+    <li><code>.Service.Id</code> = {{ .Service.Id }}</li>
+    <li><code>.Service.Hostname</code> = {{ .Service.Hostname }}</li>
+    <li><code>.Service.Type</code> = {{ .Service.Type }}</li>
+    <li><code>.Service.SubdomainUrl</code> =
+      {{- if .Service.SubdomainUrl }} <a href="{{ .Service.SubdomainUrl }}">{{ .Service.SubdomainUrl }}</a>
+      {{- else }} <em>(not available yet)</em>
+      {{- end }}
+    </li>
+    <li><code>.VscodePassword</code> =
+      {{- if .VscodePassword }} <code>{{ .VscodePassword }}</code>
+      {{- else }} <em>(not set)</em>
+      {{- end }}
+    </li>
+  </ul>
+
+  <h2>Convenience links</h2>
+  <ul>
+    <li><a href="{{ .ZeropsAppUrl }}/project/{{ .Project.Id }}">Open project dashboard</a></li>
+    <li><a href="{{ .ZeropsAppUrl }}/service-stack/{{ .Service.Id }}/dashboard">Open ZCP service detail</a></li>
+    {{- if .Service.SubdomainUrl }}
+    <li><a href="{{ .Service.SubdomainUrl }}">Open browser IDE</a></li>
+    {{- end }}
+  </ul>
+</body>
+</html>

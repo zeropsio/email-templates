@@ -159,7 +159,7 @@ System templates live in `templates/` and are referenced by exact filename from 
 
 - `templates/zcp-online.html`
 
-  Sent on successful service create when the service's `recipeSource` is `zeropsio/zcp`. One email per active account member.
+  Sent on successful service build when the service's `recipeSource` is `zeropsio/zcp`. One email per active account member.
 
   | Variable               | Description                                                                  | Example                                  |
   |------------------------|------------------------------------------------------------------------------|------------------------------------------|
@@ -175,6 +175,7 @@ System templates live in `templates/` and are referenced by exact filename from 
   | `.Service.Hostname`    | ZCP service hostname                                                         | `zcp`                                    |
   | `.Service.Type`        | Service type                                                                 | `zcp@1`                                  |
   | `.Service.SubdomainUrl`| Optional public subdomain URL of the ZCP service (browser IDE entry point)   | `https://zcp-7-8080.app-tatami.zerops.dev` |
+  | `.VscodePassword`      | Optional `VSCODE_PASSWORD` env value from the ZCP service                    | `s3cret`                                 |
 
 ## Go Template 101
 
