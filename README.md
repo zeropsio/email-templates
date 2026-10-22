@@ -1,6 +1,6 @@
 # Zerops Email Templates
 
-Templates fetched at runtime by Zerops when sending users emails about their account or recipe deployments. The `main` branch is live — merging publishes.
+Templates fetched at runtime by Zerops when sending users emails about their account or recipe deployments. The `main` branch is live - Zerops caches each file for an hour, so a merge reaches users within an hour.
 
 ## Template Formats
 
@@ -180,24 +180,30 @@ System templates live in `templates/` and are referenced by exact filename from 
   | `.Service.SubdomainUrl`| Optional public subdomain URL of the ZCP service (browser IDE entry point)   | `https://zcp-7-8080.app-tatami.zerops.dev` |
   | `.VscodePassword`      | Optional `VSCODE_PASSWORD` env value from the ZCP service                    | `s3cret`                                 |
 
-## Layout
+## Layouts
 
-`layouts/default.html` is the shared header and footer for emails that are not full HTML documents: Zerops' built-in emails and `.md` templates.
-Full `.html` templates such as `templates/zcp-online.html` already contain `<html>` and are sent without it.
-If the layout cannot be fetched, the content is sent without it.
+Layouts wrap emails that are not full HTML documents: Zerops' built-in emails and `.md` templates.
+Full `.html` templates such as `templates/zcp-online.html` already contain `<html>` and are sent without a layout.
+If a layout cannot be fetched, the content is sent without it.
 
-The layout receives only these variables, never the variables of the email it wraps:
+| Layout                 | Used for                                                             |
+|------------------------|----------------------------------------------------------------------|
+| `layouts/default.html` | All other emails, with the Zerops header and footer                  |
+| `layouts/letter.html`  | Personal letters such as `templates/first-payment-onboarding.md`, without footer links |
+
+A layout receives only these variables, never the variables of the email it wraps:
 
 | Variable        | Description                                                  | Example                 |
 |-----------------|--------------------------------------------------------------|-------------------------|
 | `.Body`         | Rendered HTML of the email, inserted without escaping       | `<p>Hello Bob</p>`      |
-| `.Subject`      | Email subject                                                | `Welcome to Zerops`     |
+| `.Subject`      | Email subject, already HTML-escaped                          | `Welcome to Zerops`     |
 | `.ZeropsAppUrl` | Base URL of the Zerops application                           | `https://app.zerops.io` |
 
-The layout has no subject line, the subject always comes from the wrapped email.
+Layouts are rendered with `text/template`, not `html/template`, because `html/template` removes the `<!--[if mso]>` comments that Outlook needs.
+This means nothing in a layout is escaped, Zerops escapes the values before passing them in. A layout has no subject line, the subject always comes from the wrapped email.
 
-`layouts/default.html` is generated, do not edit it by hand. Change `react-email/emails/layout.tsx` and run `npm run email:generate:layout`.
-Use `npm --prefix react-email run dev` to preview the source in the browser.
+Layouts are generated, do not edit them by hand. Change `react-email/emails/layout.tsx`, `letter.tsx` or the shared `_shared/frame.tsx` and run `npm run email:generate:layout`.
+Use `npm --prefix react-email run dev` to preview the sources in the browser.
 
 ## Go Template 101
 
