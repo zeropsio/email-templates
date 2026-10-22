@@ -147,9 +147,12 @@ System templates live in `templates/` and are referenced by exact filename from 
 
 - `templates/welcome.md`
 
-  | Variable     | Description                | Example |
-  |--------------|----------------------------|---------|
-  | `.FirstName` | Registered user first name | `Bob`   |
+  | Variable                       | Description                                                                 | Example                 |
+  |--------------------------------|-----------------------------------------------------------------------------|-------------------------|
+  | `.FirstName`                   | Registered user first name                                                  | `Bob`                   |
+  | `.ZeropsAppUrl`                | Base URL of the Zerops application                                          | `https://app.zerops.io` |
+  | `.WelcomeCreditWithheld`       | `true` if the welcome credit is added with the first top-up instead of now | `true`                  |
+  | `.WelcomeCreditWithheldReason` | Why the welcome credit is withheld, empty if it is not                      | `DATACENTER_IP`         |
 
 - `templates/first-payment-onboarding.md`
 
@@ -176,6 +179,25 @@ System templates live in `templates/` and are referenced by exact filename from 
   | `.Service.Type`        | Service type                                                                 | `zcp@1`                                  |
   | `.Service.SubdomainUrl`| Optional public subdomain URL of the ZCP service (browser IDE entry point)   | `https://zcp-7-8080.app-tatami.zerops.dev` |
   | `.VscodePassword`      | Optional `VSCODE_PASSWORD` env value from the ZCP service                    | `s3cret`                                 |
+
+## Layout
+
+`layouts/default.html` is the shared header and footer for emails that are not full HTML documents: Zerops' built-in emails and `.md` templates.
+Full `.html` templates such as `templates/zcp-online.html` already contain `<html>` and are sent without it.
+If the layout cannot be fetched, the content is sent without it.
+
+The layout receives only these variables, never the variables of the email it wraps:
+
+| Variable        | Description                                                  | Example                 |
+|-----------------|--------------------------------------------------------------|-------------------------|
+| `.Body`         | Rendered HTML of the email, inserted without escaping       | `<p>Hello Bob</p>`      |
+| `.Subject`      | Email subject                                                | `Welcome to Zerops`     |
+| `.ZeropsAppUrl` | Base URL of the Zerops application                           | `https://app.zerops.io` |
+
+The layout has no subject line, the subject always comes from the wrapped email.
+
+`layouts/default.html` is generated, do not edit it by hand. Change `react-email/emails/layout.tsx` and run `npm run email:generate:layout`.
+Use `npm --prefix react-email run dev` to preview the source in the browser.
 
 ## Go Template 101
 
